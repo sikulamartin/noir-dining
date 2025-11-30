@@ -2,13 +2,15 @@ import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MenuPreview from './components/MenuPreview';
+import Philosophy from './components/Philosophy';
 import Atmosphere from './components/Atmosphere';
+import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Events from './components/Events';
+import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-// Smooth scroll wrapper could be added here, but we'll use native CSS smooth scroll + Framer Motion
 const App: React.FC = () => {
   
   useEffect(() => {
@@ -21,10 +23,13 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
+        <Philosophy />
         <MenuPreview />
         <Atmosphere />
+        <Testimonials />
         <About />
         <Events />
+        <Gallery />
         <Contact />
       </main>
       <Footer />

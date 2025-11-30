@@ -37,10 +37,11 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Menu', href: '#menu' },
+    { name: 'Philosophy', href: '#philosophy' },
     { name: 'Atmosphere', href: '#atmosphere' },
     { name: 'About', href: '#about' },
+    { name: 'Gallery', href: '#gallery' },
     { name: 'Events', href: '#events' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -68,13 +69,13 @@ const Navbar: React.FC = () => {
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden lg:flex items-center space-x-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleScrollToSection(e, link.href)}
-                className="text-sm font-sans tracking-widest text-noir-sub hover:text-noir-gold transition-colors duration-300 uppercase"
+                className="text-xs font-sans tracking-widest text-noir-sub hover:text-noir-gold transition-colors duration-300 uppercase"
               >
                 {link.name}
               </a>
@@ -90,7 +91,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-white"
+            className="lg:hidden text-white"
             onClick={() => setIsMobileMenuOpen(true)}
           >
             <Menu size={24} />

@@ -68,7 +68,7 @@ const Atmosphere: React.FC = () => {
           >
              <div className="relative aspect-[4/3] overflow-hidden">
                <img 
-                 src="https://images.squarespace-cdn.com/content/v1/5e00f3dc6288c25737f857ab/1726645971496-50333T4WQKR62Y868LUR/In+finity+poool+terrace+dinner+sunset.jpg?format=2500w" 
+                 src="https://www.fcilondon.co.uk/site-assets/blog/content/77455/best-patio-dining-tables-for-elegant-outdoor-living.jpg" 
                  alt="Private Dining Table" 
                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-[2s]"
                />
